@@ -1,0 +1,53 @@
+*{ /* para configurar a página inteira*/
+    margin: 0;
+    padding: 0;
+}
+.fundo{
+    background-image: linear-gradient(15deg, rgb(0, 0, 0), rgb(0, 0, 194));
+    height: 100vh; /*para preencher a página da web com as cores citadas acima*/
+    color: white;
+    font-size: 10pt;
+    font-family: Arial;
+    text-align: center;
+}
+.calculadora{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);  /*para colocar fundo na calculadora*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); /*top, left e transform para centralizar a calculadora na web*/
+    border-radius: 15px; /*para curvar as pontas da borda da calculadora*/
+    padding: 15px; /*para aumentar o espaço da borda e dos botões*/
+}
+h1 {
+    text-align: center;
+    padding: 25px;
+}
+.botao{
+width: 50px; /*para aumentar a largura do botão*/
+height: 50px; /*para aumentar a altura de fundo do botão*/
+font-size: 25px; /*para alterar o tamanho da fonte*/
+background-color: rgb(2, 49, 53);
+cursor: pointer; /*para o ponteiro do mouse mudar quando arrastar*/
+border-radius: 0px 25px 0 25px;
+border: none; /*para tirar a borda em volta do botão*/
+color: rgb(0, 221, 250); /*cor da fonte*/
+font-weight: bold; /*colocar fonte em negrito*/
+margin: 1px; /*para colocar espaço entre os botões*/
+}
+.botao:hover{
+    background-color: rgb(0, 255, 242); /*para mudar a cor do botão quando arrastar o mouse*/
+}
+#resultado{
+    width: 220px; /*definir a largura da barra branca*/
+    height: 30px; /*definir a altura da barra branca*/
+    background-color: white;
+    margin: 3px;
+    text-align: right;
+    font-size: 25px;
+    color: rgb(95, 0, 90);
+    padding: 2px;
+}
+#resultado {
+    overflow: hidden;
+}
